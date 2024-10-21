@@ -6,9 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  
 
 </head>
 
@@ -25,11 +23,11 @@
       <div class="nav-menu" data-nav>
 
         <ul>
-          <li><a href="#home" class="active uppercase" data-link>Home</a></li>
-          <li><a href="#about" class="uppercase" data-link>About Me</a></li>
-          <li><a href="#services" class="uppercase" data-link>Services</a></li>
-          <li><a href="#projects" class="uppercase" data-link>Projects</a></li>
-          <li><a href="#contact" class="uppercase" data-link>Contact me</a></li>
+          <li><a href="#home" class="active " data-link>Home</a></li>
+          <li><a href="#about" class="" data-link>About Me</a></li>
+          <li><a href="#services" class="" data-link>Services</a></li>
+          <li><a href="#projects" class="" data-link>Projects</a></li>
+          <!-- <li><a href="#contact" class="" data-link>Contact me</a></li> -->
           <div class="toggle-wrapper">
             <label class="toggle-switch" for="checkbox">
               <input type="checkbox" id="checkbox">
@@ -50,11 +48,11 @@
 
   </header>
 
-  <main>
+  <main class="container">
     <section class="home" id="home">
-      <div class="hero-content container">
+      <div class="hero-content">
         <h1 class="hero-title mb-3">
-          Hello there! <br>I'm <span>Chizitere</span>,
+          Hello there! <br>I'm <span>Chizitere</span>.
           A Full-Stack developer of software.
 
         </h1>
@@ -62,26 +60,14 @@
         <p class="mb-3">I build powerful, scalable and responsive websites while exploring other technologies.</p>
 
 
-        <a class="btn round-full lg" href="#about">Find out more</a>
+        <a class="resume btn round-full" href="#0">Download Resume</a>
 
-        <div class="social-link-wrapper mt-3">
-          <a class="social-links round-full btn clear icon md" href="https://twitter.com/ChimereyaU"
-            target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-              class="bi bi-twitter" viewBox="0 0 16 16">
-              <path
-                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-            </svg></a>
-
-          <a class="social-links round-full btn clear icon md"
-            href="https://www.linkedin.com/in/chizitere-ukonu-976736239/" target="_blank"><svg
-              xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin"
-              viewBox="0 0 16 16">
-              <path
-                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-            </svg></a>
-        </div>
+       
 
       </div>
+<div>
+      <img class="hero-img" src="work.png">
+    </div>
 
 
 
@@ -90,131 +76,228 @@
     <!--about me-->
     <section id="about" class="about">
 
-      <div class="about-container container">
+      <div class="about-container">
 
 
-        <h2 class="section-heading mb-3 capitalize">More about me.</h2>
+        <h2 class="section-heading mb-3 capitalize text-center">More about me.</h2>
         <div class="text-wrapper">
 
-          <div class="text-box mb-3">
+          <div class="text-box">
             <p>
-              Hello there! I'm Chizitere(But you can call me chizzy), a passionate software developer with a love for
-              crafting elegant
-              and efficient solutions.My journey in the world of programming began in 2019, and ever since, i've been
-              captivated by the endless possibilities that code can unlock. My expertise lies in python, django and
-              javascript, allowing me to create robust applications that meet real-world needs. I thrive in
-              collaborative environments, where i can brainstorm, design, and code with fellow developers to bring
-              innovative ideas to life. When i'm not immersed in code, you'll find me watching movies or building random
-              things with embedded systems technologies, and researching about trending technologies. Let's connect and
-              explore the exciting realm of software together!
+              A self-taught fullstack developer, passionate about building <strong>responsive, safe, scalable and maintainable</strong>websites.My expertise lies in python, djangorestframework and
+              Nextjs, allowing me to create robust applications that meet real-world needs. I research, read books or watch movies when not immersed in code.
+              
             </p>
 
+
+
           </div>
+             
+             <figure><img src="work.png" style="height:250px;width:250px;"></figure>
 
-
+             
         </div>
 
-      </div>
-    </section>
-
-
-    <!--my services-->
-    <section id="services" class="services">
-
-      <div class="container">
-
-
-        <h2 class="section-heading mb-3 capitalize">My awesome services</h2>
-        <div class="service-container">
-          <div class="service-card round-md mb-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-laptop"
-              viewBox="0 0 16 16">
-              <path
-                d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z" />
-            </svg>
-            <h2>Fullstack development</h2>
-            <p>From front-end user interfaces to back-end databases and server management, i offer full-stack
-              development services. This means i can handle all aspects of your project, ensuring seamless integration
-              and cohesive
-              functionality across the entire application.</p>
-          </div>
-
-
-
-
-          <div class="service-card round-md mb-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tools"
-              viewBox="0 0 16 16">
-              <path
-                d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0Zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708ZM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11Z" />
-            </svg>
-            <h2>Software maintenance and upgrades</h2>
-            <p>Technology is constantly evolving, and so should your software. i offer ongoing maintenance and upgrade
-              services
-              to keep your applications up-to-date and compatible with the latest industry trends and best practices.
-            </p>
-          </div>
-
-          <div class="service-card round-md mb-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock"
-              viewBox="0 0 16 16">
-              <path
-                d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
-            </svg>
-            <h2>Secure website</h2>
-            <p>I am focused on building secure infrastructures, leveraging on best practices and my software developer
-              experiences.</p>
-          </div>
-
-
-        </div><!--end services box-->
 
       </div>
 
-      <p class="container mt-3">Got a project? <a href="mailto:chizitere469@gmail.com" class="link">Contact Me</a></p>
+      <div class="my-skills text-center">
+              <h2 class="mb-3 capitalize">Technologies i use.</h2>
+              <ul>
+                <li class="skill-list"><span>&bull;</span>HTML</li>
+                <li class="skill-list"><span>&bull;</span>CSS3</li>
+                <li class="skill-list"><span>&bull;</span>Python</li>
+                <li class="skill-list"><span>&bull;</span>Javascript</li>
+                <li class="skill-list"><span>&bull;</span>Django/Djangorestframework</li>
+                <li class="skill-list"><span>&bull;</span>React/Next.js</li>
+                <li class="skill-list"><span>&bull;</span>Docker</li>
+                <li class="skill-list"><span>&bull;</span>Postgresql</li>
+                
+              </ul>
+             </div>
     </section>
+
+
 
 
     <!--projects-->
 
     <section id="projects" class="projects">
-      <div class="wrapper container">
-        <h2 class="section-heading mb-3">Projects.</h2>
-        <p class="mb-3">Below are some projects i have done in the past.</p>
-        <div class="card-wrapper">
+      <h2 class="section-heading mb-3 text-center">Projects.</h2>
+        <p class="mb-3 text-center">Below are some projects i have done in the past.</p>
 
-          <!--card-->
-          <div class="card">
+      <div class="card-wrapper">
+                
 
-            <img src="store.png" class="round-md">
+           <!--card-->
+           <div class="card">
+              <img src="store.png">           
 
             <div class="card-text">
 
-              <h3 class="mb-2">Autostores</h3>
-              <p class="mb-3">A mini store for selling various automotive spare parts.</p>
+              <h2 class="mb-2">Farmers market online</h2>
+              <p class="mb-3">An event management and ticketing platform where a vendor can create 
+                events and users are allowed to buy tickets for the events created.</p>
 
+                <div class="mb-3"><ul>
+                  <li class="pill">HTML</li>
+                  <li class="pill">CSS</li>
+                  <li class="pill">Docker</li>
+                  <li class="pill">Html</li>
+                </ul></div>
+               
+               <div>
+                 <a href="#" class="btn primary round-full">View demo</a>
+                 <a href="#" class="btn round-full">Source code</a>
+               </div>
 
-            </div>
+          </div>
 
           </div><!--end card-->
 
 
           <!--card-->
-          <div class="card">
-
-            <img src="qube.png" class="round-md">
+           <div class="card">
+              <img src="store.png">           
 
             <div class="card-text">
 
-              <h3 class="mb-2">Qube</h3>
-              <p class="mb-3">Qube is an online Q&A (Question and Answer) community forum for students to share
-                knowledge.
-              </p>
+              <h2 class="mb-2">Farmers market online</h2>
+              <p class="mb-3">An event management and ticketing platform where a vendor can create 
+                events and users are allowed to buy tickets for the events created.</p>
 
+                <div class="mb-3"><ul>
+                  <li class="pill">HTML</li>
+                  <li class="pill">CSS</li>
+                  <li class="pill">Docker</li>
+                  <li class="pill">Html</li>
+                </ul></div>
+               
+               <div>
+                 <a href="#" class="btn primary round-full">View demo</a>
+                 <a href="#" class="btn round-full">Source code</a>
+               </div>
 
-            </div>
+          </div>
 
           </div><!--end card-->
+
+
+
+          <!--card-->
+           <div class="card">
+              <img src="store.png">           
+
+            <div class="card-text">
+
+              <h2 class="mb-2">Farmers market online</h2>
+              <p class="mb-3">An event management and ticketing platform where a vendor can create 
+                events and users are allowed to buy tickets for the events created.</p>
+
+                <div class="mb-3"><ul>
+                  <li class="pill">HTML</li>
+                  <li class="pill">CSS</li>
+                  <li class="pill">Docker</li>
+                  <li class="pill">Html</li>
+                </ul></div>
+               
+               <div>
+                 <a href="#" class="btn primary round-full">View demo</a>
+                 <a href="#" class="btn round-full">Source code</a>
+               </div>
+
+          </div>
+
+          </div><!--end card-->
+
+
+
+          <!--card-->
+           <div class="card">
+              <img src="store.png">           
+
+            <div class="card-text">
+
+              <h2 class="mb-2">Farmers market online</h2>
+              <p class="mb-3">An event management and ticketing platform where a vendor can create 
+                events and users are allowed to buy tickets for the events created.</p>
+
+                <div class="mb-3"><ul>
+                  <li class="pill">HTML</li>
+                  <li class="pill">CSS</li>
+                  <li class="pill">Docker</li>
+                  <li class="pill">Html</li>
+                </ul></div>
+               
+               <div>
+                 <a href="#" class="btn primary round-full">View demo</a>
+                 <a href="#" class="btn round-full">Source code</a>
+               </div>
+
+          </div>
+
+          </div><!--end card-->
+
+
+
+
+          <!--card-->
+           <div class="card">
+              <img src="store.png">           
+
+            <div class="card-text">
+
+              <h2 class="mb-2">Farmers market online</h2>
+              <p class="mb-3">An event management and ticketing platform where a vendor can create 
+                events and users are allowed to buy tickets for the events created.</p>
+
+                <div class="mb-3"><ul>
+                  <li class="pill">HTML</li>
+                  <li class="pill">CSS</li>
+                  <li class="pill">Docker</li>
+                  <li class="pill">Html</li>
+                </ul></div>
+               
+               <div>
+                 <a href="#" class="btn primary round-full">View demo</a>
+                 <a href="#" class="btn round-full">Source code</a>
+               </div>
+
+          </div>
+
+          </div><!--end card-->
+          
+
+          
+       <!--card-->
+           <div class="card">
+
+           <img src="store.png">
+
+            <div class="card-text">
+
+              <h2 class="mb-2">Farmers market online</h2>
+              <p class="mb-3">An event management and ticketing platform where a vendor can create 
+                events and users are allowed to buy tickets for the events created.</p>
+
+                <div class="mb-3"><ul>
+                  <li class="pill">HTML</li>
+                  <li class="pill">CSS</li>
+                  <li class="pill">Djangorestframework</li>
+                  <li class="pill">Fast API</li>
+                </ul></div>
+               
+               <div>
+                 <a href="#" class="btn primary round-full">View Demo</a>
+                 <a href="#" class="btn round-full">Source code</a>
+               </div>
+          </div>
+          
+
+          </div><!--end card-->
+
+
+
 
 
 
@@ -226,8 +309,8 @@
 
 
     <!--contact me-->
-    <section id="contact" class="contact">
-      <div class="wrapper container">
+    <section id="contact" class="contact text-center">
+      <div class="wrapper">
         <h2 class="section-heading mb-3 capitalize">Get in touch.</h2>
         <p class="mb-2 contact-text">Feel free to contact me via my email or hit me up through any of my socials, let's
           connect!</p>
@@ -244,14 +327,14 @@
   <footer class="py-3">
     <div class="container">
       <div class="social-link-wrapper mt-3">
-        <a class="social-links round-full btn clear icon md" href="https://twitter.com/ChimereyaU" target="_blank"><svg
+        <a class="social-links btn clear icon md" href="https://twitter.com/ChimereyaU" target="_blank"><svg
             xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter"
             viewBox="0 0 16 16">
             <path
               d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
           </svg></a>
 
-        <a class="social-links round-full btn clear icon md"
+        <a class="social-links btn clear icon md"
           href="https://www.linkedin.com/in/chizitere-ukonu-976736239/" target="_blank"><svg
             xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin"
             viewBox="0 0 16 16">
@@ -259,8 +342,11 @@
               d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
           </svg></a>
       </div>
+       
+      
+      <p><small class="capitalize">&copy; 2023 Chizitere . All rights reserved . <a class="link" href="#">Source code</a></small></p>
 
-      <small class="capitalize">&copy; 2023 Chizitere . All rights reserved</small>
+      
     </div>
 
   </footer>
