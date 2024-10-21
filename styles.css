@@ -99,7 +99,6 @@ img {
   display: flex;
   flex-direction:column;
   padding-top:100px;
-  text-align: center;
 }
 
 .about,
@@ -565,7 +564,6 @@ footer {
 .home {
   padding-top:150px;
   flex-direction:row;
-  text-align:none;
 }
 }
 
