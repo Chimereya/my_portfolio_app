@@ -1,2 +1,2 @@
 # portfolio_app
-a simple portfolio app
+A simple minimalist portfolio app built with HTML5, CSS3 and Javascript
