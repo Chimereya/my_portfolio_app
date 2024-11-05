@@ -2,13 +2,13 @@
 <html>
 
 <head>
-  <title>portfolio</title>
+  <title>Chimereya | Software engineer</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
 </head>
 
@@ -16,34 +16,38 @@
   <header>
     <nav class="container">
 
-      <h4><a href="#home">Chizitere</a></h4>
+      <a href="#home" class="fw-600 link">Chimereya</a>
 
-      <button class="nav-toggler" data-nav-toggler>
-        <span></span>
-      </button>
 
       <div class="nav-menu" data-nav>
 
         <ul>
           <li><a href="#home" class="active " data-link>Home</a></li>
-          <li><a href="#about" class="" data-link>About Me</a></li>
-          <li><a href="#services" class="" data-link>Services</a></li>
-          <li><a href="#projects" class="" data-link>Projects</a></li>
-          <!-- <li><a href="#contact" class="" data-link>Contact me</a></li> -->
-          <div class="toggle-wrapper">
-            <label class="toggle-switch" for="checkbox">
-              <input type="checkbox" id="checkbox">
-              <span class="slider round" id="icon"></span>
-            </label>
-          </div>
-
+          <li><a href="#about" data-link>About Me</a></li>
+          <li><a href="#projects" data-link>Projects</a></li>
+          <li><a href="#contact" data-link>Contact me</a></li>
+          
         </ul>
 
 
-
       </div>
+      <div class="toggle-container">
 
+<div id="theme-toggle" class="toggle" >
+  <svg id="sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+</svg>
 
+  <svg id="moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+</svg>
+
+  
+</div>
+<button class="nav-toggler" data-nav-toggler>
+        <span></span>
+      </button>
+    </div>
 
     </nav>
 
@@ -53,23 +57,15 @@
   <main class="container">
     <section class="home" id="home">
       <div class="hero-content">
-        <h1 class="hero-title mb-3">
-          Hello there! <br>I'm <span>Chizitere</span>.
-          A Full-Stack developer of software.
+        <h1 class="mb-3">Hi, i'm Chimereya</h1>
+            <p class="subtitle mb-6"> Developer of Softwares.</p>
 
-        </h1>
-
-        <p class="mb-3">I build powerful, scalable and responsive websites while exploring other technologies.</p>
-
-
-        <a class="resume btn round-full" href="#0">Download Resume</a>
+        <a class="resume btn lg round-full primary" href="#0">Download Resume</a>
 
        
 
       </div>
-<div>
-      <img class="hero-img" src="work.png">
-    </div>
+
 
 
 
@@ -81,12 +77,12 @@
       <div class="about-container">
 
 
-        <h2 class="section-heading mb-3 capitalize text-center">More about me.</h2>
+        <h2 class="section-heading mb-3 capitalize">More about me.</h2>
         <div class="text-wrapper">
 
-          <div class="text-box">
+          <div class="text-box mb-6">
             <p>
-              A self-taught fullstack developer, passionate about building <strong>responsive, safe, scalable and maintainable</strong>websites.My expertise lies in python, djangorestframework and
+              A self-taught fullstack developer, passionate about building <strong>responsive, safe, scalable and maintainable </strong>websites.My expertise lies in python, djangorestframework and
               Nextjs, allowing me to create robust applications that meet real-world needs. I research, read books or watch movies when not immersed in code.
               
             </p>
@@ -103,7 +99,7 @@
 
       </div>
 
-      <div class="my-skills text-center">
+      <div class="my-skills">
               <h2 class="mb-3 capitalize">Technologies i use.</h2>
               <ul>
                 <li class="skill-list"><span>&bull;</span>HTML</li>
@@ -121,222 +117,88 @@
 
 
 
+<section class="projects" id="projects">
+   <h2 class="section-heading mb-3 capitalize">Featured projects.</h2>
 
-    <!--projects-->
-
-    <section id="projects" class="projects">
-      <h2 class="section-heading mb-3 text-center">Projects.</h2>
-        <p class="mb-3 text-center">Below are some projects i have done in the past.</p>
-
-      <div class="card-wrapper">
-                
-
-           <!--card-->
-           <div class="card">
-              <img src="store.png">           
-
-            <div class="card-text">
-
-              <h2 class="mb-2">Farmers market online</h2>
-              <p class="mb-3">An event management and ticketing platform where a vendor can create 
-                events and users are allowed to buy tickets for the events created.</p>
-
-                <div class="mb-3"><ul>
-                  <li class="pill">HTML</li>
-                  <li class="pill">CSS</li>
-                  <li class="pill">Docker</li>
-                  <li class="pill">Html</li>
-                </ul></div>
-               
-               <div>
-                 <a href="#" class="btn primary round-full">View demo</a>
-                 <a href="#" class="btn round-full">Source code</a>
-               </div>
-
-          </div>
-
-          </div><!--end card-->
+  <div class="cards">
+            <div class="card">
+              <img src="store.png">
+                <h3 class="mb-3">Website</h3>
+                <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam,
+                quis nostrud exercitation</p>
+                 <div class="skill-tags">
+                    <span class="skill-tag"><span>&bull;</span>Node.js</span>
+                    <span class="skill-tag"><span>&bull;</span>Python</span>
+                    <span class="skill-tag"><span>&bull;</span>Go</span>
+                </div> 
+            </div>
 
 
-          <!--card-->
-           <div class="card">
-              <img src="store.png">           
-
-            <div class="card-text">
-
-              <h2 class="mb-2">Farmers market online</h2>
-              <p class="mb-3">An event management and ticketing platform where a vendor can create 
-                events and users are allowed to buy tickets for the events created.</p>
-
-                <div class="mb-3"><ul>
-                  <li class="pill">HTML</li>
-                  <li class="pill">CSS</li>
-                  <li class="pill">Docker</li>
-                  <li class="pill">Html</li>
-                </ul></div>
-               
-               <div>
-                 <a href="#" class="btn primary round-full">View demo</a>
-                 <a href="#" class="btn round-full">Source code</a>
-               </div>
-
-          </div>
-
-          </div><!--end card-->
+            <div class="card">
+              <img src="store.png">
+                <h3 >Website</h3>
+                <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam,
+                quis nostrud exercitation</p>
+                 <div class="skill-tags">
+                    <span class="skill-tag"><span>&bull;</span>Node.js</span>
+                    <span class="skill-tag"><span>&bull;</span>Python</span>
+                    <span class="skill-tag"><span>&bull;</span>Go</span>
+                </div> 
+            </div>
 
 
+            <div class="card">
+              <img src="store.png">
+                <h3>Website</h3>
+                <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam,
+                quis nostrud exercitation</p>
+                <div class="skill-tags">
+                    <span class="skill-tag"><span>&bull;</span>Node.js</span>
+                    <span class="skill-tag"><span>&bull;</span>Python</span>
+                    <span class="skill-tag"><span>&bull;</span>Go</span>
+                </div> 
+            </div>
 
-          <!--card-->
-           <div class="card">
-              <img src="store.png">           
+                        <div class="card">
+                          <img src="qube.png">
+                <h3>Website</h3>
+                <p class="mb-3">Specialized in building scalable microservices and robust server architectures.</p>
+               <div class="skill-tags">
+                    <span class="skill-tag"><span>&bull;</span>Node.js</span>
+                    <span class="skill-tag"><span>&bull;</span>Python</span>
+                    <span class="skill-tag"><span>&bull;</span>Go</span>
+                </div> 
+            </div>
+        </div>
+</section>
 
-            <div class="card-text">
+<section class="contact" id="contact">
+    <h2 class="mb-6">Get in touch.</h2>
+    <p class="mb-6">Feel free to contact me on my pages or email and i shall answer.</p>
 
-              <h2 class="mb-2">Farmers market online</h2>
-              <p class="mb-3">An event management and ticketing platform where a vendor can create 
-                events and users are allowed to buy tickets for the events created.</p>
+    <a href="#" class="mail-link round-full">chizitere469@gmail.com</a>
 
-                <div class="mb-3"><ul>
-                  <li class="pill">HTML</li>
-                  <li class="pill">CSS</li>
-                  <li class="pill">Docker</li>
-                  <li class="pill">Html</li>
-                </ul></div>
-               
-               <div>
-                 <a href="#" class="btn primary round-full">View demo</a>
-                 <a href="#" class="btn round-full">Source code</a>
-               </div>
+    
+</section>
 
-          </div>
-
-          </div><!--end card-->
-
-
-
-          <!--card-->
-           <div class="card">
-              <img src="store.png">           
-
-            <div class="card-text">
-
-              <h2 class="mb-2">Farmers market online</h2>
-              <p class="mb-3">An event management and ticketing platform where a vendor can create 
-                events and users are allowed to buy tickets for the events created.</p>
-
-                <div class="mb-3"><ul>
-                  <li class="pill">HTML</li>
-                  <li class="pill">CSS</li>
-                  <li class="pill">Docker</li>
-                  <li class="pill">Html</li>
-                </ul></div>
-               
-               <div>
-                 <a href="#" class="btn primary round-full">View demo</a>
-                 <a href="#" class="btn round-full">Source code</a>
-               </div>
-
-          </div>
-
-          </div><!--end card-->
-
-
-
-
-          <!--card-->
-           <div class="card">
-              <img src="store.png">           
-
-            <div class="card-text">
-
-              <h2 class="mb-2">Farmers market online</h2>
-              <p class="mb-3">An event management and ticketing platform where a vendor can create 
-                events and users are allowed to buy tickets for the events created.</p>
-
-                <div class="mb-3"><ul>
-                  <li class="pill">HTML</li>
-                  <li class="pill">CSS</li>
-                  <li class="pill">Docker</li>
-                  <li class="pill">Html</li>
-                </ul></div>
-               
-               <div>
-                 <a href="#" class="btn primary round-full">View demo</a>
-                 <a href="#" class="btn round-full">Source code</a>
-               </div>
-
-          </div>
-
-          </div><!--end card-->
-          
-
-          
-       <!--card-->
-           <div class="card">
-
-           <img src="store.png">
-
-            <div class="card-text">
-
-              <h2 class="mb-2">Farmers market online</h2>
-              <p class="mb-3">An event management and ticketing platform where a vendor can create 
-                events and users are allowed to buy tickets for the events created.</p>
-
-                <div class="mb-3"><ul>
-                  <li class="pill">HTML</li>
-                  <li class="pill">CSS</li>
-                  <li class="pill">Djangorestframework</li>
-                  <li class="pill">Fast API</li>
-                </ul></div>
-               
-               <div>
-                 <a href="#" class="btn primary round-full">View Demo</a>
-                 <a href="#" class="btn round-full">Source code</a>
-               </div>
-          </div>
-          
-
-          </div><!--end card-->
-
-
-
-
-
-
-
-        </div><!--end card wrapper-->
-      </div>
-    </section>
-
-
-
-    <!--contact me-->
-    <section id="contact" class="contact text-center">
-      <div class="wrapper">
-        <h2 class="section-heading mb-3 capitalize">Get in touch.</h2>
-        <p class="mb-2 contact-text">Feel free to contact me via my email or hit me up through any of my socials, let's
-          connect!</p>
-
-        <h2 class="mail-link"><a href="mailto:chizitere469@gmail.com" class="link">chizitere469@gmail.com</a></h2>
-
-      </div>
-
-
-    </section>
+    
 
   </main>
 
   <footer class="py-3">
     <div class="container">
       <div class="social-link-wrapper mt-3">
-        <a class="social-links btn clear icon md" href="https://twitter.com/ChimereyaU" target="_blank"><svg
+        <a class="social-links clear icon md" href="https://twitter.com/ChimereyaU" target="_blank"><svg
             xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter"
             viewBox="0 0 16 16">
             <path
               d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
           </svg></a>
 
-        <a class="social-links btn clear icon md"
+        <a class="social-links clear icon md"
           href="https://www.linkedin.com/in/chizitere-ukonu-976736239/" target="_blank"><svg
             xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin"
             viewBox="0 0 16 16">
@@ -346,7 +208,7 @@
       </div>
        
       
-      <p><small class="capitalize">&copy; 2023 Chizitere . All rights reserved . <a class="link" href="#">Source code</a></small></p>
+      <p><small class="capitalize">&copy; 2024 Chizitere . All rights reserved . Built from scratch with love </small></p>
 
       
     </div>
