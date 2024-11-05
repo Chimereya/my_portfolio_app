@@ -63,26 +63,29 @@ window.onscroll = () => {
 
 /*theme*/
 /*dark mode*/
-const toggleSwitch = document.querySelector('.toggle-switch input[type="checkbox"]');
-const currentTheme = localStorage.getItem('theme');
+ const toggle = document.getElementById('theme-toggle');
+  const sun = document.getElementById('sun');
+  const moon = document.getElementById('moon');
+  const body = document.body;
 
-if (currentTheme) {
-  document.documentElement.setAttribute('data-theme', currentTheme);
+  // Load and apply the saved theme from localStorage
+  const currentTheme = localStorage.getItem('theme') || 'light';
+  body.setAttribute('data-theme', currentTheme);
+  toggleSVG(currentTheme);
 
-  if (currentTheme === 'dark') {
-    toggleSwitch.checked = true;
+  toggle.addEventListener('click', () => {
+    const newTheme = body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    body.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    toggleSVG(newTheme);
+  });
+
+  function toggleSVG(theme) {
+    if (theme === 'dark') {
+      sun.style.display = 'block';
+      moon.style.display = 'none';
+    } else {
+      sun.style.display = 'none';
+      moon.style.display = 'block';
+    }
   }
-}
-
-function switchTheme(e) {
-  if (e.target.checked) {
-    document.documentElement.setAttribute('data-theme', 'dark');
-    localStorage.setItem('theme', 'dark');
-  }
-  else {
-    document.documentElement.setAttribute('data-theme', 'light');
-    localStorage.setItem('theme', 'light');
-  }
-}
-
-toggleSwitch.addEventListener('change', switchTheme, false);
